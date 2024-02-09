@@ -1,0 +1,44 @@
+{
+  "name": "admin-app",
+  "version": "1.0.0",
+  "description": "admin-backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "hemant kumar",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1480.0",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.1",
+    "express-session": "^1.17.3",
+    "firebase-admin": "^11.11.1",
+    "handlebars-helpers": "^0.9.8",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.1",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.1",
+    "puppeteer": "^14.03.0",
+    "puppeteer-core": "^14.03.0",
+    "razorpay": "^2.9.2",
+    "serverless-http": "^3.2.0",
+    "unique-string": "^3.0.0",
+    "unique-string-generator": "^1.1.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "admin-backend"
+  }
+}
