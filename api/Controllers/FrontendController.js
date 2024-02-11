@@ -15,7 +15,7 @@ module.exports = {
 	},
 	
 	load_result : async (req, res) => {
-	    res.send('ok');
+	    res.status(200).json({msg: 'working'});
 	},
 	download_result : async (req, res) => {   
         res.redirect('back');
