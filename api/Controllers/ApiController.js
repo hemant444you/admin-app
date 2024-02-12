@@ -219,6 +219,7 @@ module.exports = {
 		res.status(200).json({message : "Profile Updated"});
 		} catch (error) {
 		    next(error);
+		    
 		}
 
 	},

@@ -80,6 +80,7 @@ module.exports = {
 		res.redirect('back');
 		} catch (error) {
 		    next(error);
+		    
 		}
 	},
 	logout : (req, res, next) => {
