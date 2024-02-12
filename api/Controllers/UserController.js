@@ -27,6 +27,7 @@ module.exports = {
 		res.render('user/profile',{customer,setting});
 	},
 	update_profile : async (req, res) => {
+		try{
 		var photo = req.session.user.photo;
 		if(req.files){
 			AWS.config.update({
@@ -77,6 +78,9 @@ module.exports = {
 			message: 'Profile updated successfully !'
 		}
 		res.redirect('back');
+		} catch (error) {
+		    next(error);
+		}
 	},
 	logout : (req, res, next) => {
 		req.session.destroy();

@@ -169,6 +169,7 @@ module.exports = {
 		res.status(200).json({user : user});
 	},
 	update_profile : async (req, res) => {
+		try{
 		const user = await User.findById(req.user.id);
 		var photo = user.photo;
 		if(req.files){
@@ -216,6 +217,9 @@ module.exports = {
 		});
 
 		res.status(200).json({message : "Profile Updated"});
+		} catch (error) {
+		    next(error);
+		}
 
 	},
 	change_password : async (req, res) => {
