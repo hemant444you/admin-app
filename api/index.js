@@ -27,6 +27,7 @@ const auth = require('./middleware/authMiddlewares');
 // Connection to the Database
 connectDatabase();
 
+
 const app = express();
 
 app.use(cookieParser('secret'));
